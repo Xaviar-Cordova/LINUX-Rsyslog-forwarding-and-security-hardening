@@ -19,7 +19,7 @@ Remote access to this server will be useful as it is not always feasible or even
 ![Fire-wall](https://github.com/user-attachments/assets/d1818e5a-6ee5-4481-99d6-52e1cc953d54)
 
 
-For the files we intends to be stored here for network configurations, We'll be creating a public directory that hosts each branch's Topology layout and equipment running-configs. this may be one of the few areas were execution right may be needed, but we do not wish for anyone to just have it. To ensure everyone can at least see directory files but can't execute we'll set umask o=rX. Anticipating future sub-directories will be created, Setfacl will be used to set the default rights to be assigned based on usergroups. One in particular that hosting the configurations, we'll remove any rights for linuxuser and only sudoers will have access.
+For the files we intends to be stored here for network configurations, We'll be creating a public directory that hosts each branch's Topology layout and equipment running-configs. this may be one of the few areas were execution right may be needed, but we do not wish for anyone to just have it. To ensure everyone can at least see directory files but can't execute by default we'll set umask o=rX. Anticipating future sub-directories will be created, Setfacl will be used to set the default rights to be assigned based on usergroups. One in particular, Hq/configs, that hosting the configurations we'll remove any rights for linuxuser and only sudoers will have access.
 
 ![ACL](https://github.com/user-attachments/assets/6fd07eb4-74df-4ae2-8265-229908398b70)
 
