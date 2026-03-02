@@ -24,6 +24,6 @@ For the files we intends to be stored here for network configurations, We'll be 
 ![ACL](https://github.com/user-attachments/assets/6fd07eb4-74df-4ae2-8265-229908398b70)
 
 
-To finalize our project on security and hardening, we'll sync our NTP to AD and disable unnecessary services. As mentioned the primary purpose of this server is to be a rsyslog server hosting network information, services like NFS or SAMBA should be disabled and blocked in our firewall, with semanage booleans checked if any additional features were turned on to accommodate them. It is also a good practice to modify over /etc/security/limit.conf to define the parameter in case DDOS does target it in later attacks.
+To finalize our project on security and hardening, we'll sync our NTP to AD and disable unnecessary services. As mentioned the primary purpose of this server is to be a rsyslog server hosting network information, services like NFS or SAMBA should be disabled and blocked in our firewall, with semanage booleans checked if any additional features were turned on to accommodate them.
 
 ![NTP](https://github.com/user-attachments/assets/facdb6e1-9f70-4ad0-8ca4-4abfd93255ae)
